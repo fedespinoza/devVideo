@@ -1,0 +1,25 @@
+
+.icon-home:before { content: '\e800'; } /* '' */
+.icon-heart:before { content: '\e801'; } /* '' */
+.icon-music:before { content: '\e802'; } /* '' */
+.icon-to-start-alt:before { content: '\e803'; } /* '' */
+.icon-fast-fw:before { content: '\e804'; } /* '' */
+.icon-fast-bw:before { content: '\e805'; } /* '' */
+.icon-stop:before { content: '\e806'; } /* '' */
+.icon-pause:before { content: '\e807'; } /* '' */
+.icon-cog:before { content: '\e808'; } /* '' */
+.icon-thumbs-up:before { content: '\e809'; } /* '' */
+.icon-thumbs-down:before { content: '\e80a'; } /* '' */
+.icon-note:before { content: '\e80b'; } /* '' */
+.icon-note-beamed:before { content: '\e80c'; } /* '' */
+.icon-videocam:before { content: '\e80d'; } /* '' */
+.icon-volume-up:before { content: '\e80e'; } /* '' */
+.icon-play:before { content: '\e80f'; } /* '' */
+.icon-search:before { content: '\e810'; } /* '' */
+.icon-cog-1:before { content: '\e811'; } /* '' */
+.icon-login:before { content: '\e812'; } /* '' */
+.icon-user:before { content: '\e813'; } /* '' */
+.icon-fire-station:before { content: '\e817'; } /* '' */
+.icon-menu:before { content: '\f0c9'; } /* '' */
+.icon-bell-alt:before { content: '\f0f3'; } /* '' */
+.icon-database:before { content: '\f1c0'; } /* '' */

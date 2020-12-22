@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Proyecto UTN</title>
+</head>
+<body id="nada">
+    <header class="container">
+        <a href="index.html"><img src="imagenes/logo.png" alt="logo" class="logo"></a>
+            <a href="index.html"><h1>devVideo</h1></a>
+        <form action="">
+            <input type="text" placeholder="Buscar" id="buscador" onclick="cambiaColor()" onblur="saleDelElemento()">
+        </form>
+  
+        <nav id="main-nav" class="main-nav">
+          <ul class="menu">
+            <li class="menu__item3"><a href="#" class="menu__link">Mi Canal</a><i class="icon-user"></i></li>
+            <li class="menu__item"><a href="#" class="menu__link">Cerrar Sesión</a><i class="icon-login"></i></li>
+            <li class="menu__item1"><a href="#" class="menu__link">Configuración<i class="icon-cog"></i></li>
+            <li class="menu__item2"><a href="formulario.html" class="menu__link">Subir Video</a><i class="icon-videocam"></i></li>
+          </ul>
+    
+          <div class="menu-bar">
+            <div class="uno"></div>
+            <div class="dos"></div>
+            <div class="tres"></div>
+          </div>
+        </nav>
+        <img src="imagenes/perfil2.png" alt="foto-perfil" class="perfil">
+    </header>
+
+    <div class="contenedorVideos container">
+        <main class="container">
+            <div class="fila-videos-principal">
+                <div class="videos-recomendados">
+                    <video src="videos/video15.mp4" id="mivideo" class="mivideo videoPrincipal"></video>
+                    <nav class="nav-video-principal">
+                        <a href="javascript:void(0);"><div class="btn-atras" onclick="saltar(-5)"><i class="icon-fast-bw"></i></div></a>
+                        <a href="javascript:void(0);"><div class="btn-reproducir reproducir" onclick="reproducir()"><i class="icon-play" ></i></div></a>
+                        <a href="javascript:void(0);"><div class="btn-frenar" onclick="frenar()"><i class="icon-stop"></i></div></a>
+                        <a href="javascript:void(0);"><div class="btn-adelante" onclick="saltar(5)"><i class="icon-fast-fw"></i></div></a>      
+                    </nav>
+                    <div class="video-contenedorPpl">
+                        <img src="imagenes/perfil5.png" alt="perfil" class="perfil-video-principal">
+                        <div class="descripcion descripcionPrincipal">
+                            <h3>Auriculares Audio Technica M50x</h3>
+                            <p>Jorge Ivanov</p>
+                            <p>Hace 1 hora</p>
+                        </div>
+                        <button class="suscripcion">Suscribirse</button>
+                    </div>
+                </div>
+                <div class="descripcionDelVideo">
+                    <hr class="linea">
+                    <h3>Descripcion</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus optio, reiciendis autem repudiandae veritatis maxime minima mollitia eaque perspiciatis aperiam totam dicta minus quia! Autem asperiores, aut commodi doloribus dicta, distinctio illum atque ex doloremque vel quaerat, amet saepe placeat.</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, eligendi.</p>
+
+                    <p class="enlaces">Enlaces</p><a href="#">https://www.federiconiza.com/</a>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus optio, reiciendis autem repudiandae veritatis maxime minima mollitia eaque perspiciatis aperiam totam dicta minus quia! Autem asperiores, aut commodi doloribus dicta, distinctio illum atque ex doloremque vel quaerat, amet saepe placeat.</p>
+                </div>
+        </main>
+
+        <aside>
+            <div class="videos-recomendados-principal">
+                <video src="videos/video3.mp4" class="mivideoTres videoAside"></video>
+                <div class="video-contenedor-ppl">
+                    <div class="descripcion-aside">
+                        <h3>Tool en vivo - New York...</h3>
+                        <p>Mercedes Garcia</p>
+                        <p>Hace 2 horas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos-recomendados-principal">
+                <video src="videos/video6.mp4" class="mivideoSeis videoAside"></video>
+                <div class="video-contenedor-ppl">
+                    <div class="descripcion-aside">
+                        <h3>Vuelo a Rio 2020</h3>
+                        <p>Charlie Melik</p>
+                        <p>Hace 9 horas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videos-recomendados-principal">
+                <video src="videos/video2.mp4" class="mivideoDos videoAside"></video>
+                <div class="video-contenedor-ppl">
+                    <div class="descripcion-aside">
+                        <h3>Iphone 12, nueva era</h3>
+                        <p>Carla Persaud</p>
+                        <p>Hace 4 horas</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="container">
+        <nav class="footer-nav">
+            <div class="nav-footer">
+                <a href="#"><i class="icon-home icono-footer"></i>Página Principal</a>
+                <a href="#"><i class="icon-fire-station icono-footer"></i>Tendencias</a>
+                <a href="#"><i class="icon-database icono-footer"></i>Ultimas Noticias</a>
+            </div>
+            <div class="nav-footer">
+                <a href="#"><i class="icon-videocam icono-footer"></i>Mis Videos</a>
+                <a href="#"><i class="icon-note icono-footer"></i>Historial</a>
+                <a href="#"><i class="icon-thumbs-up icono-footer"></i>Suscripciones</a>
+            </div>
+        </nav>
+        <div class="separador-vertical"></div>
+        <div class="copyright">
+            <p>Diseñado por <a href="https://federiconiza.com" class="federico-espinoza">Federico Espinoza</a></p>
+            <p>Todos los derechos reservados &copy; 2020</p>
+        </div>
+    </footer>
+
+    <script src="js/validacion.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

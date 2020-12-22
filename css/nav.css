@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .main-nav {
+    background: #2e2e2e;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: -100px;
+  }
+  .menu {
+    transition: all 0.5s;
+    margin: 50px;
+    padding: 50px;
+    list-style: none;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    padding-top: 350px;
+    background: darkslateblue;
+  }
+  .menu__item {
+    display: inline-block;
+    position: absolute;
+    right: 28px;
+    bottom: 140px;
+  }
+  
+  .menu__item1 {
+    display: inline-block;
+    position: absolute;
+    padding-top: 30px;
+    right: 18px;
+    bottom: 110px;
+  }
+  
+  .menu__item2 {
+    display: inline-block;
+    position: absolute;
+    padding-top: 30px;
+    right: 18px;
+    bottom: 80px;
+  }
+  
+  .menu__item3 {
+    display: inline-block;
+    position: absolute;
+    padding-top: 30px;
+    right: 18px;
+    bottom: 50px;
+  }
+  
+  .menu__link {
+    color: #fff;
+    text-decoration: none;
+  }
+  .menu-bar {
+    width: 30px;
+    margin: 0 100px;
+    cursor: pointer;
+  }
+  .uno, .dos, .tres {
+    width: 100%;
+    background: white;
+    height: 3px;
+    transition: all 0.5s;
+  }
+  .dos {
+    margin: 5px 0;
+  }
+  /*animacion*/
+  
+  .mostrar  .uno {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .mostrar .dos {
+    opacity: 0;
+  }
+  .mostrar .tres {
+    transform: rotate(-45deg) translate(6px, -7px);
+  }
+  .mostrar .menu{
+    visibility: visible;
+    opacity: 1;
+  }
